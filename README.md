@@ -19,12 +19,12 @@ document.
 ## Compiling
 Compile the sample thesis like so if using the terminal or in your favorite latex editor
 
-'''bash
-    pdflatex thesis.tex
-    bibtex thesis
-    pdflatex thesis.tex
-    pdflatex thesis.tex
-'''
+```{r, engine='bash', count_lines}
+pdflatex thesis.tex
+bibtex thesis
+pdflatex thesis.tex
+pdflatex thesis.tex
+```
 
 ## Credits
 This has been adpated from "https://www.sharelatex.com/templates/thesis/indian-institute-of-technology-madras-thesis" by Prabhu Ramachandran. 
