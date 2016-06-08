@@ -6,6 +6,7 @@ Use (uncomment in 'thesis.tex') whichever of the following is applicable:
 \documentclass[PhD]{iitddiss}
 \documentclass[MS]{iitddiss}
 \documentclass[MTech]{iitddiss}
+\documentclass[Dual]{iitddiss}
 \documentclass[BTech]{iitddiss}
 ```
 ## Files
