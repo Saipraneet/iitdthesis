@@ -2,13 +2,26 @@
 %\documentclass[MS]{iitddiss}
 \documentclass[MTech]{iitddiss}
 %\documentclass[BTech]{iitddiss}
-\usepackage{times}
+% \usepackage{times}
  \usepackage{t1enc}
 
 \usepackage{graphicx}
 \usepackage{hyperref} % hyperlinks for references.
 \usepackage{amsmath} % easier math formulae, align, subequations \ldots
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+ 
 
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+
+\fancyhf{}
+
+\rhead{\fancyplain{}{\thepage}} % predefined ()
+\lhead{\fancyplain{}{\rightmark}} % 1. sectionname, 1.1 subsection name etc
+\cfoot{\textcopyright \the\year, \emph{Indian Institute of Technology Delhi}}
+\renewcommand{\footrulewidth}{0.4pt}
 \begin{document}
 
 

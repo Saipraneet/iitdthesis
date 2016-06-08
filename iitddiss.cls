@@ -53,9 +53,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Geometry and page layout
-\RequirePackage[a4paper,left=1.5in,right=1in,top=1in,bottom=0.667in,
-                nohead]{geometry}[2002/07/08]
-\parskip 8pt
+\RequirePackage[a4paper,left=1.5in,right=1in,top=1in,bottom=1in,
+                headsep=.4in]{geometry}[2002/07/08]
+\parskip 12pt
 
 \renewcommand{\@pnumwidth}{2.5em}
 %\renewcommand{\@tocrmarg}{2.5em}
