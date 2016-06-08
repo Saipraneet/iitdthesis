@@ -34,12 +34,14 @@
 \newif\if@MS
 \newif\if@MTech
 \newif\if@BTech
+\newif\if@Dual
 \newif\if@Synopsis
 
 \DeclareOption{PhD}{\@PhDtrue}
 \DeclareOption{MS}{\@MStrue}
 \DeclareOption{MTech}{\@MTechtrue}
 \DeclareOption{BTech}{\@BTechtrue}
+\DeclareOption{Dual}{\@Dualtrue}
 \DeclareOption{synopsis}{\@Synopsistrue}
 \ProcessOptions\relax
 
@@ -103,7 +105,11 @@
 \def\department#1{\gdef\@department{#1}}
 
 
+\let\@advisor\relax
+\def\advisor#1{\def\@advisor{#1}}
 
+\let\@entrynumber\relax
+\def\entrynumber#1{\def\@entrynumber{#1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % The title page
@@ -133,10 +139,14 @@
          \else
             {\normalsize \em submitted by \par}
          \fi
-         \vskip 5ex%
          {\bf \large\MakeUppercase{\@author}\par\par}
+         {\bf \MakeUppercase{\@entrynumber}\par\par}
          \vskip 5ex%
-         {\em for the award of the degree }\par
+         {\normalsize \em under the guidance of \par}
+         \vskip 5ex%
+         {\bf \large\MakeUppercase{\@advisor}\par\par}
+         \vskip 5ex%}
+         {\normalsize \em for the award of the degree }\par
          \vskip 5ex%
          {\em of} \par
          \vskip 5ex%
@@ -145,28 +155,35 @@
          \if@MS
             {\em A THESIS }\par
             \vskip 5ex%
-            {\normalsize \em submitted by \par}
-            \vskip 5ex%
             {\bf \large\MakeUppercase{\@author}\par\par}
+            {\bf \MakeUppercase{\@entrynumber}\par\par}
             \vskip 5ex%
-            {\em for the award of the degree }\par
+            {\normalsize \em under the guidance of}
+            {\bf \large\MakeUppercase{\@advisor}\par\par}
+            \vskip 5ex%}
+            {\normalsize \em for the award of the degree }\par
             \vskip 5ex%
             {\em of} \par
             \vskip 5ex%
             {\bf \large \MakeUppercase{Master Of Science}} \par
             (by Research) \par
          \else
-           {\em A Project Report }\par
-           \vskip 5ex%
-           {\normalsize \em submitted by \par}
+           {\em Thesis submitted by \par}
            \vskip 5ex%
            {\bf \large\MakeUppercase{\@author}\par\par}
+           {\bf \MakeUppercase{\@entrynumber}\par\par}
            \vskip 5ex%
+           {\normalsize \em under the guidance of\par}
+           {\bf \large\MakeUppercase{\@advisor}\par}
+           \vskip 5ex%}
            {\normalsize \em in partial fulfilment of the requirements\par
              for the award of the degree of \par}
            \vskip 5ex%
            \if@MTech
              {\bf MASTER OF TECHNOLOGY}
+           \fi
+           \if@Dual
+             {\bf BACHELOR AND MASTER OF TECHNOLOGY}
            \fi
            \if@BTech
               {\bf BACHELOR OF TECHNOLOGY}
