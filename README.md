@@ -1,6 +1,13 @@
 # A template for thesis at Indian Institute of Technology Delhi
 
 A latex template for Masters (MTech, Dual), Doctorate (PhD), MS or Bachelors(BTech) theses at IIT Delhi.
+Use (uncomment in 'thesis.tex') whichever of the following is applicable:
+```{r, engine='latex', count_lines}
+\documentclass[PhD]{iitddiss}
+\documentclass[MS]{iitddiss}
+\documentclass[MTech]{iitddiss}
+\documentclass[BTech]{iitddiss}
+```
 ## Files
 A LaTeX class (iitddiss.cls) along with a simple template thesis
 (thesis.tex) and synopsis (synopsis.tex) are provided here.  These can
