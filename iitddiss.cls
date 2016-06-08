@@ -53,7 +53,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Geometry and page layout
-\RequirePackage[a4paper,left=1.5in,right=1in,top=1in,bottom=1in,
+\RequirePackage[a4paper,left=2in,right=1.5in,top=1.5in,bottom=1.5in,
                 headsep=.4in]{geometry}[2002/07/08]
 \parskip 12pt
 

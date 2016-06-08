@@ -11,7 +11,7 @@
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{fancyhdr}
- 
+ \linespread{1.2}
 
 \pagestyle{fancy}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
@@ -20,7 +20,7 @@
 
 \rhead{\fancyplain{}{\thepage}} % predefined ()
 \lhead{\fancyplain{}{\rightmark}} % 1. sectionname, 1.1 subsection name etc
-\cfoot{\textcopyright \the\year, \emph{Indian Institute of Technology Delhi}}
+\cfoot{\textcopyright \text{ } \the\year, \emph{Indian Institute of Technology Delhi}}
 \renewcommand{\footrulewidth}{0.4pt}
 \begin{document}
 
@@ -159,21 +159,6 @@ This document provides a simple template of how the provided
 \verb+iitddiss.cls+ \LaTeX\ class is to be used.  Also provided are
 several useful tips to do various things that might be of use when you
 write your thesis.
-
-Before reading any further please note that you are strongly advised
-against changing any of the formatting options used in the class
-provided in this directory, unless you are absolutely sure that it
-does not violate the IITD formatting guidelines.  \emph{Please do not
-  change the margins or the spacing.}  If you do change the formatting
-you are on your own (don't blame me if you need to reprint your entire
-thesis).  In the case that you do change the formatting despite these
-warnings, the least I ask is that you do not redistribute your style
-files to your friends (or enemies).
-
-It is also a good idea to take a quick look at the formatting
-guidelines.  Your office or advisor should have a copy.  If they
-don't, pester them, they really should have the formatting guidelines
-readily available somewhere.
 
 To compile your sources run the following from the command line:
 \begin{verbatim}
