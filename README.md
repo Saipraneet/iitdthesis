@@ -7,6 +7,10 @@ Use (uncomment in 'thesis.tex') whichever of the following is applicable:
 \documentclass[MS]{iitddiss}
 \documentclass[MTech]{iitddiss}
 \documentclass[BTech]{iitddiss}
+\documentclass[Other]{iitddiss}
+% IF YOU USE THE OTHER OPTION, THEN YOU MUST FILL OUT THE PROGRAM OPTION BELOW TOO
+\program{MY CUSTOM PROGRAM NAME}
+
 ```
 ## Files
 A LaTeX class (iitddiss.cls) along with a simple template thesis

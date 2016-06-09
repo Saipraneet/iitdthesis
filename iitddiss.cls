@@ -35,6 +35,7 @@
 \newif\if@MTech
 \newif\if@BTech
 \newif\if@Dual
+\newif\if@Other
 \newif\if@Synopsis
 
 \DeclareOption{PhD}{\@PhDtrue}
@@ -42,6 +43,7 @@
 \DeclareOption{MTech}{\@MTechtrue}
 \DeclareOption{BTech}{\@BTechtrue}
 \DeclareOption{Dual}{\@Dualtrue}
+\DeclareOption{Other}{\@Othertrue}
 \DeclareOption{synopsis}{\@Synopsistrue}
 \ProcessOptions\relax
 
@@ -108,6 +110,9 @@
 \let\@advisor\relax
 \def\advisor#1{\def\@advisor{#1}}
 
+\let\@program\relax
+\def\program#1{\def\@program{#1}}
+
 \let\@entrynumber\relax
 \def\entrynumber#1{\def\@entrynumber{#1}}
 
@@ -139,66 +144,68 @@
          \else
             {\normalsize \em submitted by \par}
          \fi
-         {\bf \large\MakeUppercase{\@author}\par\par}
-         {\bf \MakeUppercase{\@entrynumber}\par\par}
+         {\bf \large{\@author}\par\par}
+         {\bf {\@entrynumber}\par\par}
          \vskip 5ex%
          {\normalsize \em under the guidance of \par}
          \vskip 5ex%
-         {\bf \large\MakeUppercase{\@advisor}\par\par}
+         {\bf \large{\@advisor}\par\par}
          \vskip 5ex%}
          {\normalsize \em for the award of the degree }\par
          \vskip 5ex%
          {\em of} \par
          \vskip 5ex%
-         {\bf \large \MakeUppercase{Doctor of Philosophy}} \par
+         {\bf \large {Doctor of Philosophy}} \par
        \else
          \if@MS
             {\em A THESIS }\par
             \vskip 5ex%
-            {\bf \large\MakeUppercase{\@author}\par\par}
-            {\bf \MakeUppercase{\@entrynumber}\par\par}
+            {\bf \large{\@author}\par\par}
+            {\bf {\@entrynumber}\par\par}
             \vskip 5ex%
             {\normalsize \em under the guidance of}
-            {\bf \large\MakeUppercase{\@advisor}\par\par}
+            {\bf \large{\@advisor}\par\par}
             \vskip 5ex%}
             {\normalsize \em for the award of the degree }\par
             \vskip 5ex%
             {\em of} \par
             \vskip 5ex%
-            {\bf \large \MakeUppercase{Master Of Science}} \par
+            {\bf \large {Master Of Science}} \par
             (by Research) \par
          \else
            {\em Thesis submitted by \par}
            \vskip 5ex%
-           {\bf \large\MakeUppercase{\@author}\par\par}
-           {\bf \MakeUppercase{\@entrynumber}\par\par}
+           {\bf \large{\@author}\par\par}
+           {\bf {\@entrynumber}\par\par}
            \vskip 5ex%
            {\normalsize \em under the guidance of\par}
-           {\bf \large\MakeUppercase{\@advisor}\par}
+           {\bf \large{\@advisor}\par}
            \vskip 5ex%}
            {\normalsize \em in partial fulfilment of the requirements\par
              for the award of the degree of \par}
            \vskip 5ex%
            \if@MTech
-             {\bf MASTER OF TECHNOLOGY}
+             {\bf Master of Technology}
            \fi
            \if@Dual
-             {\bf BACHELOR AND MASTER OF TECHNOLOGY}
+             {\bf Bachelor and Master of Technology}
            \fi
            \if@BTech
-              {\bf BACHELOR OF TECHNOLOGY}
+              {\bf Bachelor and Master of Technology}
+           \fi
+           \if@Other
+              {\bf {\@program}}
            \fi
          \fi
       \fi
     }
   \end{center}%
 
-  \vspace*{0.75in}
-  \centerline{\includegraphics[height=2in,width=2in, keepaspectratio]{iitd_logo.png}}
+  \centerline{\includegraphics[height=1.5in,width=1.5in, keepaspectratio]{iitd_logo.png}}
   \vspace*{-0.15in}
   \begin{center}
-    {\bf \large DEPARTMENT OF \@department\par}
-    {\bf \large INDIAN INSTITUTE OF TECHNOLOGY DELHI.}
+    {\bf \large Department Of \@department\par}
+    {\bf INDIAN INSTITUTE OF TECHNOLOGY DELHI}
     \vglue 0.50em
     {\bf \large \@date}\par
   \end{center}
