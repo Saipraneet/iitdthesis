@@ -57,7 +57,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Geometry and page layout
-\RequirePackage[a4paper,left=2in,right=1.5in,top=1.5in,bottom=1.5in,
+\RequirePackage[a4paper,left=1in,right=0.8in,top=1in,bottom=1in,
                 headsep=.4in]{geometry}[2002/07/08]
 \parskip 12pt
 
@@ -88,15 +88,15 @@
 % 
 % natbib allows easy switching of citation style and using it along
 % with the iitd.bst makes things perfect.
-\RequirePackage[authoryear,round]{natbib} 
+% \RequirePackage[authoryear,round]{natbib} 
 %\RequirePackage[numbers,square]{natbib} 
-\bibliographystyle{iitd}
-
-\newcommand{\bibstyle@iitd}{\bibpunct{(}{)}{;}{a}{,}{,}%
-     \gdef\NAT@biblabel##1{##1. }}
+% \bibliographystyle{iitd}
+\bibliographystyle{alpha}
+% \newcommand{\bibstyle@iitd}{\bibpunct{(}{)}{;}{a}{,}{,}%
+    %  \gdef\NAT@biblabel##1{##1. }}
 %
-\setlength{\bibhang}{0pt}
-\citestyle{iitd}
+% \setlength{\bibhang}{0pt}
+% \citestyle{iitd}
 %\citestyle{unsrt_newen}
 
 
