@@ -15,6 +15,7 @@
 \usepackage{amsmath} % easier math formulae, align, subequations \ldots
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{natbib}
 \usepackage{fancyhdr}
  \linespread{1.2}
 
@@ -50,8 +51,8 @@
 
 \vspace*{0.5in}
 
-\noindent This is to certify that the thesis titled {\bf \LaTeX\ CLASS  
-  FOR DISSERTATIONS SUBMITTED TO IIT-D}, submitted by {\bf Author}, 
+\noindent This is to certify that the thesis titled {\bf \LaTeX\ CLASS
+  FOR DISSERTATIONS SUBMITTED TO IIT-D}, submitted by {\bf Author},
   to the Indian Institute of Technology, Delhi, for
 the award of the degree of {\bf Master of Technology}, is a bona fide
 record of the research work done by him under our supervision.  The
@@ -68,12 +69,12 @@ diploma.
 \noindent Professor \\
 \noindent Dept. of Physics\\
 \noindent IIT-Delhi, 600 036 \\
-} 
-\hspace*{1.0in} 
+}
+\hspace*{1.0in}
 \end{singlespacing}
 \vspace*{0.25in}
 \noindent Place: New Delhi\\
-Date: 8th June 2016 
+Date: 8th June 2016
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -122,7 +123,7 @@ institute guidelines.
 % Abbreviations
 \abbreviations
 
-\noindent 
+\noindent
 \begin{tabbing}
 xxxxxxxxxxx \= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \kill
 \textbf{IITD}   \> Indian Institute of Technology, Delhi \\
@@ -185,7 +186,7 @@ the following command:
 Use this thesis as a basic template to format your thesis.  The
 \verb+iitddiss+ class can be used by simply using something like this:
 \begin{verbatim}
-\documentclass[PhD]{iitddiss}  
+\documentclass[PhD]{iitddiss}
 \end{verbatim}
 
 To change the title page for different degrees just change the option
@@ -200,7 +201,7 @@ To write a synopsis simply use the \verb+synopsis.tex+ file as a
 simple template.  The synopsis option turns this on and can be used as
 shown below.
 \begin{verbatim}
-\documentclass[PhD,synopsis]{iitddiss}                                
+\documentclass[PhD,synopsis]{iitddiss}
 \end{verbatim}
 
 Once again the title page may require some small amount of fine
@@ -259,7 +260,7 @@ your bibliography.  It makes managing your references much easier.  It
 is an excellent way to organize your references and reuse them.  You
 can use one set of entries for your references and cite them in your
 thesis, papers and reports.  If you haven't used it anytime before
-please invest some time learning how to use it.  
+please invest some time learning how to use it.
 
 I've included a simple example BIB\TeX\ file along in this directory
 called \verb+refs.bib+.  The \verb+iitddiss.cls+ class package which
@@ -292,7 +293,7 @@ a URL.
 
 The following packages might be useful when writing your thesis.
 
-\begin{itemize}  
+\begin{itemize}
 \item It is very useful to include line numbers in your document.
   That way, it is very easy for people to suggest corrections to your
   text.  I recommend the use of the \texttt{lineno} package for this
@@ -340,11 +341,11 @@ whatnot.  Thats the end of it.
 
 \listofpapers
 
-\begin{enumerate}  
+\begin{enumerate}
 \item Authors....  \newblock
  Title...
   \newblock {\em Journal}, Volume,
   Page, (year).
-\end{enumerate}  
+\end{enumerate}
 
 \end{document}
