@@ -191,7 +191,7 @@
              {\bf Bachelor and Master of Technology}
            \fi
            \if@BTech
-              {\bf Bachelor and Master of Technology}
+              {\bf Bachelor of Technology}
            \fi
            \if@Other
               {\bf {\@program}}
